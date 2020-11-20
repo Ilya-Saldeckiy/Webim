@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webim</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://snipp.ru/cdn/jqueryui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <img src="img/logo.svg" alt="logo" class="logo">
+            <nav>
+                <ul class="menu-list list-reset">
+                    <li class="menu-list-item"><a href="#">Main</a></li>
+                    <li class="menu-list-item"><a href="#">Features</a></li>
+                    <li class="menu-list-item"><a href="#">Item</a></li>
+                    <li class="menu-list-item"><a href="#">Parthers</a></li>
+                    <li class="menu-list-item"><a href="#">F.A.Q</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <main>
+            <section class="video-section">
+                <div class="container video-back">
+                    <div>
+                    <h1 class="main-caption">Header</h1>
+                    <p class="video-text">Lorem irure fugiat cupidatat duis mollit commodo.Eu cillum ea reprehenderit elit laboris do exercitation laborum sit elit incididunt aute fugiat consectetur. </p>
+                    <a href="#" class="video-link">Watch the video to find out more</a>
+                    </div>
+                    <div class="position-image-video">
+                    <img src="img/video.png" alt="image" class="video-img">
+                    </div>
+                </div>
+            </section>
+            <section class="features-section">
+                <div class="container features-position">
+                    <h3 class="features-caption">Functionality and features</h3>
+                    <ul class="features-list list-reset">
+                        <li class="features-list-item item-1">
+                            <article>
+                                <h3 class="list-item-caption">Access data from over 30,0000 global stations</h3>
+                            </article>
+                        </li>
+                        <li class="features-list-item item-2">
+                            <article>
+                                <h3 class="list-item-caption">Create your own library of data</h3>
+                            </article>
+                        </li>
+                        <li class="features-list-item item-3">
+                            <article>
+                                <h3 class="list-item-caption">Analyse your data</h3>
+                            </article>
+                        </li>
+                        <li class="features-list-item item-4">
+                            <article>
+                                <h3 class="list-item-caption">Present your data</h3>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container question-section">
+                    <div>
+                    <img src="img/img.jpg" alt="image" class="question-image">
+                    </div>
+                    <div>
+                    <h2 class="question-caption">We want the best value for you:</h2>
+                    <ol class="question-list">
+                        <li class="question-list-item">
+                            <p class="question-text">Are you willing to spend money?</p>
+                            <button type="button" class="question-btn btn">Yes</button>
+                            <button type="button" class="question-btn btn">No</button>
+                        </li>
+                        <li class="question-list-item">
+                            <p class="question-text">Who are you?</p>
+                            <button type="button" class="question-btn btn">Individual</button>
+                            <button type="button" class="question-btn btn">Student </button>
+                            <button type="button" class="question-btn btn">Company user</button>
+                        </li>
+                        <li class="question-list-item">
+                            <p class="question-text">What sort of data are you working with?</p>
+                            <button type="button" class="question-btn btn">Meteorological</button>
+                            <button type="button" class="question-btn btn">Other </button>
+                        </li>
+                        <li class="question-list-item">
+                            <p class="question-text">Wind Speed Data:</p>
+                            <button type="button" class="question-btn btn">I have my own</button>
+                            <button type="button" class="question-btn btn">I want to find quality wind speed data</button>
+                        </li>
+                    </ol>
+                    </div>
+                </div>
+            </section>
+            <section class="partners-section">
+                <div class="container">
+                    <h3 class="partners-caption">Our partners</h3>
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide partners-list-item first-partners"><img src="img/qube2.png" alt="QUBE"></div>
+                            <div class="swiper-slide partners-list-item"><img src="img/aard.png" alt="aard"></div>
+                            <div class="swiper-slide partners-list-item"><img src="img/Excellench.png" alt="Excellench"></div>
+                            <div class="swiper-slide partners-list-item last-partners"><img src="img/Empasoft.png" alt="Empasoft"></div>
+                        </div>
+                    </div>
+                    <script>
+                        var mySwiper = new Swiper('.swiper-container', {
+                        // Optional parameters
+                            direction: 'horizontal',
+                            loop: true,
+                            slidesPerView: 4,
+                            spaceBetween: 30,
+
+                            autoplay: {
+                                delay: 2000,
+                            },
+
+                            breakpoints: {
+                                667: {
+                                    slidesPerView: 4,
+                                },
+
+                                320: {
+                                    slidesPerView: 2,
+                                },
+
+                                220: {
+                                    slidesPerView: 1
+                                }
+                            },
+
+                        })
+                    </script>
+                </div>
+            </section>
+            <section class="our-section">
+                <div class="container">
+                    <h2 class="our-caption">Our features</h2>
+                    <p class="our-text">Lorem irure fugiat cupidatat duis mollit commodo. Eu cillum ea reprehenderit elit laboris do exercitation laborum sit elit incididunt aute fugiat consectetur.</p>
+                    <div class="accordion">
+                        <div class="accordion-item">
+                            <div class="accordion-header">Lorem irure fugiat cupidatat duis mollit commodo?</div>
+                            <div class="active-acor">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, hic et molestiae facilis porro saepe praesentium esse omnis dicta debitis amet itaque dolorum quisquam quia assumenda corporis a perferendis temporibus!</p>
+                            </div>
+                        </div> 
+                       
+                        <div class="accordion-item">
+                            <div class="accordion-header">Commodo nisi aliqua proident consequat consequat?</div>
+                            <div class="active-acor">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero numquam sapiente tempore sit eum accusamus, impedit temporibus illum debitis porro doloribus nisi natus ducimus recusandae quae reiciendis magnam! Ad, rerum?</p>
+                            </div>
+                        </div> 
+                       
+                        <div class="accordion-item">
+                            <div class="accordion-header">Sunt veniam voluptate reprehenderit consectetur eiusmod quis?</div>
+                            <div class="active-acor">
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur, illo quisquam similique porro earum deserunt assumenda velit ullam mollitia amet voluptate. Mollitia obcaecati assumenda praesentium nesciunt ad dicta tempora unde.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        $('.accordion').accordion({
+                        active: true,
+                        heightStyle: 'content',
+                        header: '> .accordion-item > .accordion-header'
+                    });
+                   </script>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container position-footer">
+                <div>
+                    <img src="img/logo-futer.svg" alt="logo" class="footer-logo">
+                </div>
+                <div>
+                    <ul class="footer-list list-reset">
+                        <li class="footer-list-item-social social-1"><a href="#"></a></li>
+                        <li class="footer-list-item-social social-2"><a href="#"></a></li>
+                        <li class="footer-list-item-social social-3"><a href="#"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
